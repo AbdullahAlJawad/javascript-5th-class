@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head><title>Glenn Maxwell</title></head>
+
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+        <script>
+            var car={
+                name:"BMW",
+                price:100000,
+                age:20,
+                car_speed:200,
+            }
+            
+            
+            document.getElementById("demo1").innerHTML= "My car name is " + car.name + ". It's price is " + car.price + ".It's high speed is " + car.car_speed;
+            
+            var fruits=["mango","banana","apple","pumpking","orange"];
+            const cricketer=["maxwell","gayle","ab de","klassen"];
+            const avengers=["thor","iron man","captain","hulk"];
+            avengers[2]="balck-panther";
+            var browser=["chrome","edge","opera","firefox","opera gx"];
+            document.getElementById("demo2").innerHTML=fruits.join(" this is a fruit ");
+            document.getElementById("demo4").innerHTML=cricketer.pop();
+            document.getElementById("demo4").innerHTML=cricketer;
+            document.getElementById("demo5").innerHTML=browser.push("safari");
+            document.getElementById("demo5").innerHTML=browser;
+            document.getElementById("demo5").innerHTML=browser.shift();
+            document.getElementById("demo5").innerHTML=browser;
+            document.getElementById("demo5").innerHTML=browser.unshift("pipilika");
+            document.getElementById("demo5").innerHTML=browser;
+            document.getElementById("demo6").innerHTML=avengers;
+            cricketer[cricketer.length]="dhoni";
+            document.getElementById("demo4").innerHTML=cricketer;
+            const student1=["a","b","c"];
+            const student2=["x","y","z"];
+            const all_student=student1.concat(student2);
+            document.getElementById('demo7').innerHTML=all_student;
+        </script>
+
+    </body>
+</html>
